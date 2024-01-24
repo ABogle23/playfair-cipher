@@ -18,3 +18,8 @@ ENV FLASK_APP=api/app.py
 
 # Run app.py when the container launches
 CMD ["flask", "run", "--host=0.0.0.0"]
+
+
+# To build 'docker build -t playfair-image .'
+
+# To run 'docker run -p 4999:5000 playfair-image'
