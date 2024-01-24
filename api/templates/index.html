@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encoding Form</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace; /* Monospace font */
+            background-color: #000000; /* Black background */
+            color: #00ff00; /* Green text */
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin: auto;
+            padding: 20px;
+            display: inline-block;
+            text-align: left;
+        }
+
+        label, input {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="text"] {
+            background-color: #333;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+        }
+
+        input[type="submit"] {
+            background-color: #333;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #222;
+        }
+    </style>
+</head>
+<body>
+    <form action="/encoded" method="post">
+        <label for="codewordField">Codeword:</label>
+        <input type="text" id="codewordField" name="codeword">
+        <label for="wordField">Word:</label>
+        <input type="text" id="wordField" name="word">
+        <input type="submit" value="Encode">
+    </form>
+</body>
+</html>
